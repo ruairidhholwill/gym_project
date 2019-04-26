@@ -3,12 +3,15 @@
 <form action="/members" method="post">
 
   <label for="first_name">First Name:</label>
-  <input type="text" name="first_name" value="first_name">
+  <input type="text" name="first_name" id="first_name">
 
   <label for="last_name">Last Name:</label>
-  <input type="text" name="last_name" value="last_name">
+  <input type="text" name="last_name" id="last_name">
 
-  <label for="membership_type"></label>
-  <input type="text" name="" value="">
+  <label for="membership_type">Membership:</label>
+  <input type="radio" name="membership_type" value="Standard">Standard
+  <input type="radio" name="membership_type" value="Premium">Premium
+
+  <input type="submit" value="Add Member">
 
 </form>
