@@ -6,8 +6,8 @@ CREATE TABLE group_classes (
   id SERIAL8 primary key,
   class_name VARCHAR(255),
   capacity INT4,
-  start_at TIME,
-  end_at TIME,
+  start_at VARCHAR(255),
+  end_at VARCHAR(255),
   class_date VARCHAR(255)
 );
 

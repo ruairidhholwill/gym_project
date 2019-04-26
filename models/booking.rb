@@ -10,7 +10,7 @@ class Booking
     @group_class_id = options['group_class_id'].to_i
   end
 
-
+  
 
 
 

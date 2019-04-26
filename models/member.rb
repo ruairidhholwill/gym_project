@@ -12,6 +12,9 @@ class Member
     @membership_type = options['membership_type']
   end
 
+  def full_name()
+    return "#{@first_name.capitalize} #{@last_name.capitalize}"
+  end
 
 
 
