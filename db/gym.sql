@@ -15,7 +15,6 @@ CREATE TABLE members (
   id SERIAL8 primary key,
   first_name VARCHAR(255),
   last_name VARCHAR(255),
-  age INT4,
   membership_type VARCHAR(255)
 );
 
