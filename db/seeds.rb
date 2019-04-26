@@ -3,13 +3,15 @@ require_relative('../models/group_class.rb')
 require_relative('../models/member.rb')
 require('pry-byebug')
 
+Member.delete_all()
+
 def make_member(first_name, last_name, membership_type)
   new_member = Member.new( {
     'first_name' => first_name,
     'last_name' => last_name,
     'membership_type' => membership_type
     } )
-  #new_member.save()
+  new_member.save()
   return new_member
 end
 
@@ -40,5 +42,11 @@ end
 
 booking1 = make_booking(member1.id, group_class1.id)
 
-binding.pry
-nil
+
+# testing if member update function works
+# member1.membership_type = 'Pro'
+# member1.update()
+
+
+# binding.pry
+# nil
