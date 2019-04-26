@@ -16,7 +16,20 @@ class TestMember < MiniTest::Test
     assert_equal('Ruairidh', result)
   end
 
+  def test_last_name()
+    result = @member.last_name()
+    assert_equal('Holwill', result)
+  end
 
+  def test_full_name
+    result = @member.full_name()
+    assert_equal('Ruairidh Holwill', result)
+  end
+
+  def test_membership_type()
+    result = @member.membership_type()
+    assert_equal('Standard', result)
+  end
 
 
 end
