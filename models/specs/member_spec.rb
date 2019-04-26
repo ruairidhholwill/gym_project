@@ -2,11 +2,15 @@ require('minitest/autorun')
 require('minitest/rg')
 require_relative('../member.rb')
 
+
 class TestMember < MiniTest::Test
 
 
   def setup
-    options = {'id' => 1, 'first_name' => 'Ruairidh', 'last_name' => 'Holwill', 'membership_type' => 'Standard'}
+    options = {
+      'id' => 1,
+      'first_name' => 'Ruairidh', 'last_name' => 'Holwill', 'membership_type' => 'Standard'
+    }
 
     @member = Member.new(options)
   end
