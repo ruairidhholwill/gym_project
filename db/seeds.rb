@@ -3,6 +3,7 @@ require_relative('../models/group_class.rb')
 require_relative('../models/member.rb')
 require('pry-byebug')
 
+Booking.delete_all()
 Member.delete_all()
 GroupClass.delete_all()
 
@@ -17,6 +18,8 @@ def make_member(first_name, last_name, membership_type)
 end
 
 member1 = make_member('Ruairidh', 'Holwill', 'Standard')
+member2 = make_member('Chris', 'Mitchell', 'Standard')
+member1 = make_member('Connie', 'Begg', 'Premium')
 
 def make_group_class(class_name, capacity, start_at, end_at, class_date)
     new_group_class = GroupClass.new( {
