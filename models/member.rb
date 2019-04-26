@@ -17,36 +17,14 @@ class Member
   end
 
   def save()
-    sql = "INSERT INTO members
-    (
-      first_name,
-      last_name,
-      membership_type
-    )
-    VALUES
-    (
-      $1, $2, $3
-    )
-    RETURNING id;"
+    sql = "INSERT INTO members (first_name, last_name, membership_type) VALUES ($1, $2, $3) RETURNING id;"
     values = [@first_name, @last_name, @membership_type]
     result = SqlRunner.run(sql, values)
-    id = result.first['id']
-    @id = id
+    @id = result.first['id'].to_i
   end
 
   def update()
-    sql = "UPDATE members
-    SET
-    (
-      first_name,
-      last_name,
-      membership_type
-    )
-    =
-    (
-      $1, $2, $3
-    )
-    WHERE id = $4;"
+    sql = "UPDATE members SET (first_name, last_name, membership_type) = ($1, $2, $3) WHERE id = $4;"
     values = [@first_name, @last_name, @membership_type, @id]
     SqlRunner.run(sql, values)
   end
