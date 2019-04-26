@@ -40,7 +40,7 @@ class GroupClass
     return group_classes
   end
 
-  def self.find()
+  def self.find(id)
     sql = "SELECT * FROM group_classes WHERE id = $1;"
     values = [id]
     result = SqlRunner.run(sql, values).first

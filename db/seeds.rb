@@ -38,7 +38,7 @@ def make_booking(member_id, group_class_id)
     'member_id' => member_id,
     'group_class_id' => group_class_id
     } )
-  #new_booking.save()
+  new_booking.save()
   return new_booking
 end
 

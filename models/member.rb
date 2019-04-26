@@ -42,7 +42,7 @@ class Member
     return members
   end
 
-  def self.find()
+  def self.find(id)
     sql = "SELECT * FROM members WHERE id = $1;"
     values = [id]
     result = SqlRunner.run(sql, values).first
