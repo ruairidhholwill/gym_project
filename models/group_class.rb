@@ -34,7 +34,7 @@ class GroupClass
   end
 
   def self.all()
-    sql = "SELECT * FROM members;"
+    sql = "SELECT * FROM group_classes;"
     group_class_data = SqlRunner.run(sql)
     group_classes = map_items(group_class_data)
     return group_classes
