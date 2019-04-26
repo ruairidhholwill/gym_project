@@ -21,6 +21,6 @@ CREATE TABLE members (
 
 CREATE TABLE bookings (
   id SERIAL8 primary KEY,
-  group_classes_id INT8 REFERENCES group_classes(id),
-  members_id INT8 REFERENCES members(id)
+  group_class_id INT8 REFERENCES group_classes(id),
+  member_id INT8 REFERENCES members(id)
 );
