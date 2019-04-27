@@ -32,6 +32,12 @@ get '/group_classes/:id/edit' do
   erb(:"group_classes/edit")
 end
 
+post '/group_classes/:id' do
+  group_class = GroupClass.new(params)
+  group_class.update()
+  redirect to "/group_classes/#{params['id']}"
+end
+
 post '/group_classes/:id/delete' do
   group_class = GroupClass.find(params['id'])
   group_class.delete()
