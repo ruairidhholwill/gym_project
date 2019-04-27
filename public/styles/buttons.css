@@ -1,0 +1,25 @@
+.btn {
+  border:0px none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: white;
+  cursor:pointer;
+}
+
+.btn--action:hover {
+  background-color: lightblue;
+}
+
+.btn--action {
+  background-color: grey;
+}
+
+.btn--wrapper {
+  margin: 0px 0px 30px 0px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

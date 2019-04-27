@@ -4,12 +4,17 @@
     <meta charset="utf-8">
     <title>Average Joe's</title>
     <link rel = "icon" type = "image/png" href = "images/dumbell.png">
+
+    <link rel="stylesheet" type="text/css" href="/styles/buttons.css">
+
   </head>
   <body>
     <nav>
-      <li><a href="/">Home</a></li>
-      <li><a href="/members">Members</a></li>
-      <li><a href="/group_classes">Classes</a></li>
+      <ul class="flex">
+        <li><a href="/">Home</a></li>
+        <li><a href="/members">Members</a></li>
+        <li><a href="/group_classes">Classes</a></li>
+      </ul>
     </nav>
  <%= yield %>
   </body>
