@@ -14,7 +14,9 @@
     Select a class:
     <select name="group_class_id">
       <% for group_class in @group_classes %>
-      <option value="<%= group_class.id %>"><%= group_class.class_name %></option>
+      <option value="<%= group_class.id %>">
+      <%= group_class.class_date %> - <%= group_class.class_name %>
+      </option>
       <% end %>
     </select>
   </label>
