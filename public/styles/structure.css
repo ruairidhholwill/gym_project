@@ -1,5 +1,6 @@
 body {
-  background: white url('/images/gym.jpeg');
+  /* background: white url('/images/gym.jpeg'); */
+  background: white;
   background-size: 100%;
   background-repeat: no-repeat;
   color: black;
@@ -46,17 +47,34 @@ input, select {
   background-color: grey;
   border-radius: 10px;
   width: 35%;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #group-form {
   background-color: grey;
   border-radius: 10px;
   width: 35%;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #submit{
   text-align: center;
   padding: 15px;
+}
+
+table {
+   border: 0.5px solid grey;
+   width: 35%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  padding: 5px;
 }
