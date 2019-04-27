@@ -1,0 +1,67 @@
+body {
+  background: white url('/images/gym.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: black;
+  font-family: 'Merriweather', serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 50px;
+}
+
+label {
+  float: left;
+  width: 150px;
+  text-align: right;
+  padding-right: 12px;
+  margin-top: 12px;
+  clear: left;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+input, textarea {
+  width: 50%;
+  padding: 10px 10px;
+  margin-top: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+input, select {
+  width: 50%;
+  padding: 10px 10px;
+  margin-top: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+#member-form {
+  background-color: grey;
+  border-radius: 10px;
+  width: 35%;
+  margin-left: 20px;
+}
+
+#group-form {
+  background-color: grey;
+  border-radius: 10px;
+  width: 35%;
+  margin-left: 20px;
+}
+
+#submit{
+  text-align: center;
+  padding: 15px;
+}
