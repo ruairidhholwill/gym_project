@@ -1,4 +1,6 @@
 require_relative('../db/sql_runner.rb')
+require_relative('member.rb')
+require_relative('booking.rb')
 
 class GroupClass
 
@@ -31,6 +33,13 @@ class GroupClass
     sql = "DELETE FROM group_classes WHERE id = $1;"
     values = [@id]
     SqlRunner.run(sql, values)
+  end
+
+  def members()
+    sql = "SELECT members.* FROM members INNER JOIN bookings ON bookings.member_id = members.id INNER JOIN group_classes ON bookings.group_class_id  = group_classes.id WHERE group_class_id = $1;"
+    values = [@id]
+    results = SqlRunner.run(sql, values)
+    return results.map { |member| Member.new(member) }
   end
 
   def self.all()

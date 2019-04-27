@@ -52,6 +52,6 @@ booking1 = make_booking(member1.id, group_class1.id)
 # member1.membership_type = 'Pro'
 # member1.update()
 #
-#
-# binding.pry
-# nil
+
+binding.pry
+nil

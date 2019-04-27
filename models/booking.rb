@@ -29,6 +29,20 @@ class Booking
     SqlRunner.run(sql, values)
   end
 
+  def member()
+    sql = "SELECT * FROM members WHERE id = $1;"
+    values = [@member_id]
+    results = SqlRunner.run(sql, values)
+    return Member.new(results.first)
+  end
+
+  def group_class()
+    sql = "SELECT * FROM group_classes WHERE id = $1;"
+    values = [@group_class_id]
+    results = SqlRunner.run(sql, values)
+    return GroupClass.new(results.first)
+  end
+
   def self.all()
     sql = "SELECT * FROM bookings;"
     booking_data = SqlRunner.run(sql)
