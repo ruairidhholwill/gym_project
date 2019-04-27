@@ -23,6 +23,7 @@ post '/group_classes' do
 end
 
 get '/group_classes/:id' do
+  @members = GroupClass.find(params['id']).members
   @group_class = GroupClass.find(params['id'])
   erb(:"group_classes/show")
 end
