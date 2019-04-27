@@ -1,0 +1,25 @@
+<h1>Make a new booking below</h1>
+
+<form action="/bookings" method="post">
+  <label>
+    Select a member:
+    <select name="member_id">
+      <% for member in @members %>
+      <option value="<%= member.id %>"><%= member.full_name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <label>
+    Select a class:
+    <select name="group_class_id">
+      <% for group_class in @group_classes %>
+      <option value="<%= group_class.id %>"><%= group_class.class_name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <input class="btn btn--action" type="submit" value="Complete!">
+
+
+</form>

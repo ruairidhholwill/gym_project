@@ -12,3 +12,14 @@ get '/bookings' do
   @group_classes = GroupClass.all
   erb(:"bookings/index")
 end
+
+get '/bookings/new' do
+  @members = Member.all
+  @group_classes = GroupClass.all
+  erb(:"bookings/new")
+end
+
+post '/bookings' do
+  Booking.new(params).save
+  redirect to '/bookings'
+end
