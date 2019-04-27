@@ -2,23 +2,25 @@
 
 <form id="member-form" action="/members" method="post">
 
-<div>
-  <label for="first_name">First Name:</label>
-  <input type="text" name="first_name" id="first_name">
-</div>
+  <div>
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name" id="first_name">
+  </div>
 
-<div>
-  <label for="last_name">Last Name:</label>
-  <input type="text" name="last_name" id="last_name">
-</div>
+  <div>
+    <label for="last_name">Last Name:</label>
+    <input type="text" name="last_name" id="last_name">
+  </div>
 
-<div>
-  <label for="membership_type">Membership:</label>
-  <input type="radio" name="membership_type" value="Standard">Standard
-  <input type="radio" name="membership_type" value="Premium">Premium
-</div>
+  <div>
+    <label for="membership_type">Membership:</label>
+    <select name="membership_type">
+      <option value="Standard">Standard</option>
+      <option value="Premium">Premium</option>
+    </select>
+  </div>
 
-<div id="submit">
-  <input class="btn btn--action" type="submit" value="Add Member">
-</div>
+  <div id="submit">
+    <input class="btn btn--action" type="submit" value="Add Member">
+  </div>
 </form>
