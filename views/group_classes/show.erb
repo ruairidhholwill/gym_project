@@ -7,6 +7,8 @@
 <h4>Members booked in:</h4>
 <p>(put list here...)</p>
 
+<button onclick="window.location.href='/group_classes/<%= @group_class.id %>/edit'">Edit</button>
+
 <form action="/group_classes/<%= @group_class.id %>/delete" method="post">
   <input type="submit" value="Delete">
 </form>

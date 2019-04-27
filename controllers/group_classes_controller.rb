@@ -27,6 +27,11 @@ get '/group_classes/:id' do
   erb(:"group_classes/show")
 end
 
+get '/group_classes/:id/edit' do
+  @group_class = GroupClass.find(params['id'])
+  erb(:"group_classes/edit")
+end
+
 post '/group_classes/:id/delete' do
   group_class = GroupClass.find(params['id'])
   group_class.delete()
