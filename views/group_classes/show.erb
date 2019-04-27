@@ -1,1 +1,12 @@
-<h1>Details of class</h1>
+<h2><%= @group_class.class_name %></h2>
+
+<h3>Details:</h3>
+<h4>Start time: <%= @group_class.start_at %></h4>
+<h4>End time: <%= @group_class.end_at %></h4>
+<h4>Date: <%= @group_class.class_date %></h4>
+<h4>Members booked in:</h4>
+<p>(put list here...)</p>
+
+<form action="/group_classes/<%= @group_class.id %>/delete" method="post">
+  <input type="submit" value="Delete">
+</form>
