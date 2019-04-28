@@ -49,9 +49,11 @@ class GroupClass
     return group_classes
   end
 
-  def self.all_by_date()
-    sql = "SELECT * FROM group_classes WHERE class_date > GETDATE"
-
+  def self.all_upcoming()
+    sql = "SELECT * FROM group_classes WHERE class_date >= CURRENT_DATE ORDER BY class_date ASC, start_at ASC;"
+    group_class_data = SqlRunner.run(sql)
+    group_classes = map_items(group_class_data)
+    return group_classes
   end
 
   def self.find(id)
