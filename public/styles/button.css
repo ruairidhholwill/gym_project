@@ -1,12 +1,12 @@
 .btn {
-  border:0px none;
+  border:1px solid;
   border-radius: 8px;
   padding: 8px 12px;
   color: white;
   cursor:pointer;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
+  margin:auto;
+  display:block;
 }
 
 .btn--action:hover {
@@ -15,7 +15,7 @@
 
 .btn--action {
   text-align: center;
-  background-color: black;
+  background-color: grey;
 }
 
 .btn--wrapper {

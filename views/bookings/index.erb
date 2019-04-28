@@ -14,8 +14,9 @@
     <td><%= booking.member.full_name %></td>
     <td><%= booking.group_class.class_name %> - <%= booking.group_class.class_date %></td>
   </tr>
-
   <% end %>
 </table>
 
+<div>
 <button class="btn btn--action" onclick="window.location.href='/bookings/new'">New Booking</button>
+</div>

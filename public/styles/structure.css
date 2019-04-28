@@ -8,7 +8,7 @@ body {
   margin: 0px;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
   text-align: center;
   font-family: sans-serif;
 }
@@ -48,7 +48,7 @@ input, select {
 }
 
 #member-form {
-  background-color: grey;
+  background-color: #F1F1F1;
   border-radius: 10px;
   width: 35%;
   margin-left: auto;
@@ -56,7 +56,7 @@ input, select {
 }
 
 #group-form {
-  background-color: grey;
+  background-color: #F1F1F1;
   border-radius: 10px;
   width: 35%;
   margin-left: auto;
@@ -64,7 +64,7 @@ input, select {
 }
 
 #booking-form {
-  background-color: grey;
+  background-color: #F1F1F1;
   border-radius: 10px;
   width: 35%;
   margin-left: auto;
@@ -74,21 +74,4 @@ input, select {
 #submit{
   text-align: center;
   padding: 15px;
-}
-
-table {
-   background-color: grey;
-   border-radius: 10px;
-   border: 0.5px solid grey;
-   width: 35%;
-   margin-left: auto;
-   margin-right: auto;
-}
-
-th {
-  text-align: left;
-}
-
-td {
-  padding: 5px;
 }
