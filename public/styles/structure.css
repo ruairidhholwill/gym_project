@@ -1,6 +1,5 @@
 body {
-  /* background: white url('/images/gym.jpeg'); */
-  background: white;
+  background: white url('/images/gym.jpeg');
   background-size: 100%;
   background-repeat: no-repeat;
   color: black;
@@ -10,6 +9,11 @@ body {
 }
 
 h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h2 {
   text-align: center;
   font-family: sans-serif;
 }
@@ -52,6 +56,14 @@ input, select {
 }
 
 #group-form {
+  background-color: grey;
+  border-radius: 10px;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#booking-form {
   background-color: grey;
   border-radius: 10px;
   width: 35%;

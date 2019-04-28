@@ -1,4 +1,7 @@
 require_relative('../db/sql_runner')
+require_relative('member.rb')
+require_relative('group_class.rb')
+
 
 class Booking
 
