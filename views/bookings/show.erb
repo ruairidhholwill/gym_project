@@ -4,6 +4,8 @@
 <h3>Class: <%= @booking.group_class.class_name %></h3>
 <h3>Date: <%= @booking.group_class.class_date %></h3>
 
-<form action="/bookings/<%= @booking.id %>/delete" method="post">
-  <input class="btn btn--action" type="submit" value="Delete">
-</form>
+<div id="submit">
+  <form action="/bookings/<%= @booking.id %>/delete" method="post">
+    <input class="btn btn--action" type="submit" value="Delete">
+  </form>
+</div>

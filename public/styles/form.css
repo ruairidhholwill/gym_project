@@ -54,4 +54,7 @@ input, select {
 #submit{
   text-align: center;
   padding: 15px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }

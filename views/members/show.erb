@@ -4,7 +4,9 @@
 
 <button class="btn btn--action" onclick="window.location.href='/members/<%= @member.id %>/edit'">Edit</button>
 
+<div id="submit">
 <form action="/members/<%= @member.id %>/delete" method="POST"><input class="btn btn--action" type="submit" value="Delete"></form>
+</div>
 
 <br></br>
 
