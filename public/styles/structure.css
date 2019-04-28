@@ -77,6 +77,8 @@ input, select {
 }
 
 table {
+   background-color: grey;
+   border-radius: 10px;
    border: 0.5px solid grey;
    width: 35%;
    margin-left: auto;

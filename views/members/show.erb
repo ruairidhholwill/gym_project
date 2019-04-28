@@ -2,6 +2,12 @@
 
 <h3>Membership: <%=  @member.membership_type%></h3>
 
+<button class="btn btn--action" onclick="window.location.href='/members/<%= @member.id %>/edit'">Edit</button>
+
+<form action="/members/<%= @member.id %>/delete" method="POST"><input class="btn btn--action" type="submit" value="Delete"></form>
+
+<br></br>
+
 <table>
   <tr>
     <th>Classes booked on:</th>
@@ -13,9 +19,4 @@
   </td>
 </table>
 
-
-<button class="btn btn--action" onclick="window.location.href='/members/<%= @member.id %>/edit'">Edit</button>
-
-<br></br>
-
-<form action="/members/<%= @member.id %>/delete" method="POST"><input class="btn btn--action" type="submit" value="Delete"></form>
+<button class="btn btn--action" onclick="window.location.href='/members/<%= @member.id %>/class_history'">Previous History</button>

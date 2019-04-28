@@ -25,6 +25,11 @@ get '/members/:id' do
   erb(:"members/show")
 end
 
+get '/members/:id/class_history' do
+  @member = Member.find(params['id'])
+  erb(:"members/class_history")
+end
+
 get '/members/:id/edit' do
   @member = Member.find(params['id'])
   erb(:"members/edit")
