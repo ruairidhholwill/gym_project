@@ -1,0 +1,57 @@
+label {
+  float: left;
+  width: 150px;
+  text-align: right;
+  padding-right: 12px;
+  margin-top: 12px;
+  clear: left;
+  font-size: 16px;
+  font-family: courier;
+}
+
+input, textarea {
+  width: 50%;
+  padding: 10px 10px;
+  margin-top: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+input, select {
+  width: 50%;
+  padding: 10px 10px;
+  margin-top: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+#member-form {
+  background-color: #F1F1F1;
+  border-radius: 10px;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#group-form {
+  background-color: #F1F1F1;
+  border-radius: 10px;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#booking-form {
+  background-color: #F1F1F1;
+  border-radius: 10px;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#submit{
+  text-align: center;
+  padding: 15px;
+}

@@ -1,5 +1,5 @@
 table {
-   font-family: Helvetica, Arial, sans-serif;
+   font-family: courier;
    border: 0.5px solid grey;
    padding-left: 25px;
    width: 35%;
@@ -7,6 +7,7 @@ table {
    margin-right: auto;
    border-collapse:
    collapse; border-spacing: 0;
+   font-family: arial;
 }
 
 td, th {
@@ -24,6 +25,11 @@ td {
   background: #FAFAFA;
   padding: 5px;
   text-align: center;
+}
+
+table a {
+  color: black;
+  font-style: underline;
 }
 
 tr:nth-child(even) td { background: #F1F1F1; }

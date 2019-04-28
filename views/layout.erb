@@ -2,22 +2,37 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Average Joe's</title>
-    <link rel = "icon" type = "image/png" href = "/images/dumbell.png">
+    <title>FTF</title>
+    <link rel = "icon" type = "image/png" href = "/images/ftf.jpg">
     <link rel="stylesheet" type="text/css" href="/styles/button.css">
     <link rel="stylesheet" type="text/css" href="/styles/structure.css">
     <link rel="stylesheet" type="text/css" href="/styles/table.css">
+    <link rel="stylesheet" type="text/css" href="/styles/form.css">
   </head>
   <body>
+    <div>
+    <header>
+      <a href="/"><img src="../images/ftf.jpg" alt="ftf logo"></a>
+    </header>
+    </div>
+    <div>
     <nav>
       <ul class="flex">
-        <li><a href="/">Home</a></li>
+        <!-- <li><a href="/">Home</a></li> -->
         <li><a href="/members">Members</a></li>
         <li><a href="/group_classes">Classes</a></li>
         <li><a href="/bookings">Bookings</a></li>
       </ul>
     </nav>
-    <br></br>
- <%= yield %>
+    </div>
+    <div>
+      <br></br>
+      <br></br>
+
+       <%= yield %>
+
+       <br></br>
+       <br></br>
+    </div
   </body>
 </html>

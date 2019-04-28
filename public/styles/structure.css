@@ -1,77 +1,62 @@
+header {
+  background-color: white;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+header, img {
+  height:150px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
-  background: white url('/images/gym.jpeg');
+  /* background: white url('/images/gym.jpeg'); */
+  background: #9099A2;
   background-size: 100%;
   background-repeat: no-repeat;
   color: black;
-  font-family: 'Merriweather', serif;
+  font-family: courier;
   padding: 0px;
   margin: 0px;
 }
 
 h1, h2, h3, h4, h5 {
   text-align: center;
-  font-family: sans-serif;
+  font-family: courier;
 }
 
-h2 {
-  text-align: center;
-  font-family: sans-serif;
+nav, ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6D7993;
 }
 
-label {
+nav, li {
+  font-family: courier;
+  font-size: 24px;
   float: left;
-  width: 150px;
-  text-align: right;
-  padding-right: 12px;
-  margin-top: 12px;
-  clear: left;
-  font-size: 16px;
-  font-family: monospace;
+  border-right: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
 }
 
-input, textarea {
-  width: 50%;
-  padding: 10px 10px;
-  margin-top: 12px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  vertical-align: middle;
-}
-
-input, select {
-  width: 50%;
-  padding: 10px 10px;
-  margin-top: 12px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  vertical-align: middle;
-}
-
-#member-form {
-  background-color: #F1F1F1;
-  border-radius: 10px;
-  width: 35%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#group-form {
-  background-color: #F1F1F1;
-  border-radius: 10px;
-  width: 35%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#booking-form {
-  background-color: #F1F1F1;
-  border-radius: 10px;
-  width: 35%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#submit{
+nav, li, a {
+  display: block;
+  color: black;
+  padding: 8px 8px;
   text-align: center;
-  padding: 15px;
+  text-decoration: none;
+}
+/*
+li a:hover {
+   background-color: lightblue;
+} */
+
+.active {
+  background-color: lightblue;
 }
