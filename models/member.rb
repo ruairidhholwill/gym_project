@@ -44,6 +44,13 @@ class Member
     return results.map { |group_class| GroupClass.new(group_class) }
   end
 
+  def group_classes_upcoming()
+    sql = "SELECT group_classes.* FROM group_classes INNER JOIN bookings ON bookings.group_class_id = group_classes.id INNER JOIN members ON bookings.member_id = members.id WHERE member_id = $1 AND class_date >= CURRENT_DATE ORDER BY class_date ASC, start_at ASC;"
+    values = [@id]
+    results = SqlRunner.run(sql, values)
+    return results.map { |group_class| GroupClass.new(group_class) }
+  end
+
   def self.all()
     sql = "SELECT * FROM members;"
     member_data = SqlRunner.run(sql)

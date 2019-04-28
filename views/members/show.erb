@@ -7,7 +7,7 @@
     <th>Classes booked on:</th>
   </tr>
   <td>
-    <% @member.group_classes.each do |group_class| %>
+    <% @member.group_classes_upcoming.each do |group_class| %>
     <li><%= group_class.class_name %> - <%= group_class.class_date %></li>
     <% end %>
   </td>
