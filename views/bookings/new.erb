@@ -3,19 +3,16 @@
 <form id="booking-form" action="/bookings" method="post">
 
   <div>
-    <label>
-      Select a member:
+    <label>Select a member:</label>
       <select name="member_id">
         <% for member in @members %>
         <option value="<%= member.id %>"><%= member.full_name %></option>
         <% end %>
       </select>
-    </label>
   </div>
 
   <div>
-    <label>
-      Select a class:
+    <label>Select a class:</label>
       <select name="group_class_id">
         <% for group_class in @group_classes %>
         <option value="<%= group_class.id %>">
@@ -23,11 +20,10 @@
         </option>
         <% end %>
       </select>
-    </label>
   </div>
 
-  <div>
-    <input id=submit class="btn btn--action" type="submit" value="Complete!">
+  <div id="submit">
+    <input class="btn btn--action" type="submit" value="Complete!">
   </div>
 
 </form>
