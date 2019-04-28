@@ -13,6 +13,13 @@ get '/group_classes' do
   erb(:"group_classes/index")
 end
 
+get '/group_classes/history' do
+  @group_classes = GroupClass.all_history
+  @members = Member.all
+  @bookings = Booking.all
+  erb(:"group_classes/history")
+end
+
 get '/group_classes/new' do
   erb(:"group_classes/new")
 end
