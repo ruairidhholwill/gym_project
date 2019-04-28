@@ -49,6 +49,11 @@ class GroupClass
     return group_classes
   end
 
+  def self.all_by_date()
+    sql = "SELECT * FROM group_classes WHERE class_date > GETDATE"
+
+  end
+
   def self.find(id)
     sql = "SELECT * FROM group_classes WHERE id = $1;"
     values = [id]

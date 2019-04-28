@@ -8,7 +8,7 @@ CREATE TABLE group_classes (
   capacity INT4,
   start_at VARCHAR(255),
   end_at VARCHAR(255),
-  class_date VARCHAR(255)
+  class_date DATE
 );
 
 CREATE TABLE members (

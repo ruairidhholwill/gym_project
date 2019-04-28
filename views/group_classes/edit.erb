@@ -21,31 +21,13 @@
   </div>
 
   <div>
-    <label for="start_at">Start time:</label>
-    <select name="start_at">
-      <option value="09:00" <%= "selected" if @group_class.start_at == "09:00" %>>09:00</option>
-      <option value="10:00" <%= "selected" if @group_class.start_at == "10:00" %>>10:00</option>
-      <option value="11:00" <%= "selected" if @group_class.start_at == "11:00" %>>11:00</option>
-      <option value="12:00" <%= "selected" if @group_class.start_at == "12:00" %>>12:00</option>
-      <option value="13:00" <%= "selected" if @group_class.start_at == "13:00" %>>13:00</option>
-      <option value="14:00" <%= "selected" if @group_class.start_at == "14:00" %>>14:00</option>
-      <option value="15:00" <%= "selected" if @group_class.start_at == "15:00" %>>15:00</option>
-      <option value="16:00" <%= "selected" if @group_class.start_at == "16:00" %>>16:00</option>
-    </select>
+    <label for="start_at">Start:</label>
+    <input type="time" name="start_at" value="<%= @group_class.start_at %>">
   </div>
 
   <div>
-    <label for="end_at">End time:</label>
-    <select name="end_at">
-      <option value="10:00" <%= "selected" if @group_class.end_at == "10:00" %>>10:00</option>
-      <option value="11:00" <%= "selected" if @group_class.end_at == "11:00" %>>11:00</option>
-      <option value="12:00" <%= "selected" if @group_class.end_at == "12:00" %>>12:00</option>
-      <option value="13:00" <%= "selected" if @group_class.end_at == "13:00" %>>13:00</option>
-      <option value="14:00" <%= "selected" if @group_class.end_at == "14:00" %>>14:00</option>
-      <option value="15:00" <%= "selected" if @group_class.end_at == "15:00" %>>15:00</option>
-      <option value="16:00" <%= "selected" if @group_class.end_at == "16:00" %>>16:00</option>
-      <option value="17:00" <%= "selected" if @group_class.end_at == "17:00" %>>17:00</option>
-    </select>
+    <label for="end_at">End:</label>
+    <input type="time" name="end_at" value="<%= @group_class.end_at %>">
   </div>
 
   <div>
