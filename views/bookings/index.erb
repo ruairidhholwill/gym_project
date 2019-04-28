@@ -10,7 +10,7 @@
   <% for booking in @bookings %>
 
   <tr>
-    <td><%= booking.id %></td>
+    <td><a href="/bookings/<%= booking.id %>"><%= booking.id %></td>
     <td><%= booking.member.full_name %></td>
     <td><%= booking.group_class.class_name %> - <%= booking.group_class.class_date %></td>
   </tr>
