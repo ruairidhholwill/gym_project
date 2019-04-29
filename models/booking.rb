@@ -52,7 +52,7 @@ class Booking
     bookings = map_items(booking_data)
     return bookings
   end
-
+  
   def self.find(id)
     sql = "SELECT * FROM bookings WHERE id = $1;"
     values = [id]

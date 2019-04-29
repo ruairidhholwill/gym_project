@@ -9,7 +9,7 @@ also_reload('../models/*')
 get '/bookings' do
   @bookings = Booking.all
   @members = Member.all
-  @group_classes = GroupClass.all
+  @group_classes = GroupClass.all_upcoming
   erb(:"bookings/index")
 end
 

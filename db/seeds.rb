@@ -33,8 +33,8 @@ def make_group_class(class_name, capacity, start_at, end_at, class_date)
     return new_group_class
 end
 
-group_class1 = make_group_class('HIIT', 10, '09:00', '10:00', '2019-04-26')
-group_class2 = make_group_class('Gymnastics', 15, '13:00', '15:00', '2019-04-26')
+group_class1 = make_group_class('HIIT', 5, '09:00', '10:00', '2019-04-26')
+group_class2 = make_group_class('Gymnastics', 4, '13:00', '15:00', '2019-04-26')
 
 def make_booking(member_id, group_class_id)
   new_booking = Booking.new( {
