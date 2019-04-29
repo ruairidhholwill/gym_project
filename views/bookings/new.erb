@@ -15,15 +15,15 @@
     <label>Select class:</label>
     <select name="group_class_id">
       <% for group_class in @group_classes %>
-      <% if group_class.class_is_full == true %>
-      <option value="<%= group_class.id %>"disabled>
-        <%= group_class.class_date %> - <%= group_class.class_name %>
-      </option>
-      <% else %>
-      <option value="<%= group_class.id %>">
-        <%= group_class.class_date %> - <%= group_class.class_name %>
-      </option>
-      <% end %>
+        <% if group_class.class_is_full == true %>
+          <option value="<%= group_class.id %>"disabled>
+            <%= group_class.class_date %> - <%= group_class.class_name %>: CLASS FULL
+          </option>
+          <% else %>
+          <option value="<%= group_class.id %>">
+            <%= group_class.class_date %> - <%= group_class.class_name %>
+          </option>
+        <% end %>
       <% end %>
     </select>
   </div>
