@@ -27,6 +27,11 @@ td {
   text-align: center;
 }
 
+#table-li {
+  font-size: 14px;
+  font-family: arial;
+}
+
 table a {
   color: black;
   font-style: underline;

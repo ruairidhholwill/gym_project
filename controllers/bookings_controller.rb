@@ -29,6 +29,19 @@ get '/bookings/:id' do
   erb(:"bookings/show")
 end
 
+get '/bookings/:id/edit' do
+  @booking = Booking.find(params['id'])
+  @members = Member.all
+  @group_classes = GroupClass.all
+  erb(:"bookings/edit")
+end
+
+post '/bookings/:id' do
+  booking = Booking.new(params)
+  booking.update()
+  redirect to "/bookings/#{params['id']}"
+end
+
 post '/bookings/:id/delete' do
   booking = Booking.find(params['id'])
   booking.delete()

@@ -22,7 +22,7 @@ class Booking
 
   def update()
     sql = "UPDATE bookings SET (member_id, group_class_id) = ($1, $2) WHERE id = $3;"
-    values = [@member_id, @group_class_id]
+    values = [@member_id, @group_class_id, @id]
     SqlRunner.run(sql, values)
   end
 
