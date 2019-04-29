@@ -1,3 +1,4 @@
+require('date')
 require_relative('../db/sql_runner')
 require_relative('member.rb')
 require_relative('group_class.rb')
@@ -44,6 +45,10 @@ class Booking
     values = [@group_class_id]
     results = SqlRunner.run(sql, values)
     return GroupClass.new(results.first)
+  end
+
+  def date_today()
+    p Date.today
   end
 
   def self.all()

@@ -29,7 +29,15 @@ class TestBooking < MiniTest::Test
     assert_equal(7, result)
   end
 
+  def test_date
+    result = Date.today.to_s
+    assert_equal('2019-04-29', result)
+  end
 
+  def test_date_tomorrow
+    result = (Date.today + 1).to_s
+    assert_equal('2019-04-30', result)
+  end
 
 
 
