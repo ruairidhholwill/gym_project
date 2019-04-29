@@ -89,6 +89,13 @@ class GroupClass
     return group_classes
   end
 
+  def self.all_upcoming_today()
+    sql = "SELECT * FROM group_classes WHERE class_date = CURRENT_DATE ORDER BY class_date ASC, start_at ASC;"
+    group_class_data = SqlRunner.run(sql)
+    group_classes = map_items(group_class_data)
+    return group_classes
+  end
+
   def self.all_history()
     sql = "SELECT * FROM group_classes WHERE class_date < CURRENT_DATE ORDER BY class_date ASC, start_at ASC;"
     group_class_data = SqlRunner.run(sql)

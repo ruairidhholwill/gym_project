@@ -7,7 +7,7 @@ require_relative('../models/member.rb')
 also_reload('../models/*')
 
 get '/group_classes' do
-  @group_classes = GroupClass.all_upcoming
+  @group_classes = GroupClass.all_upcoming_today
   @members = Member.all
   @bookings = Booking.all
   erb(:"group_classes/index")
