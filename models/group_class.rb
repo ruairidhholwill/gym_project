@@ -42,6 +42,18 @@ class GroupClass
     return results.map { |member| Member.new(member) }
   end
 
+  def check_attendance()
+    sql = "SELECT members.* FROM members INNER JOIN bookings ON bookings.member_id = members.id INNER JOIN group_classes ON bookings.group_class_id  = group_classes.id WHERE group_class_id = $1;"
+    values = [@id]
+    results = SqlRunner.run(sql, values)
+    return results.count
+  end
+
+  def remaining_spaces()
+    spaces = @capacity.to_i - check_attendance()
+    return spaces.to_i
+  end
+
   def self.all()
     sql = "SELECT * FROM group_classes;"
     group_class_data = SqlRunner.run(sql)

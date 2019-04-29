@@ -4,6 +4,7 @@
 <h4>Start time: <%= @group_class.start_at %></h4>
 <h4>End time: <%= @group_class.end_at %></h4>
 <h4>Date: <%= @group_class.class_date %></h4>
+<h4>Spaces left: <%= @group_class.remaining_spaces %></h4>
 
 
 <button class="btn btn--action" onclick="window.location.href='/group_classes/<%= @group_class.id %>/edit'" >Edit</button>

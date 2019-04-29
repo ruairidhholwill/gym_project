@@ -46,6 +46,7 @@ def make_booking(member_id, group_class_id)
 end
 
 booking1 = make_booking(member1.id, group_class1.id)
+booking2 = make_booking(member2.id, group_class1.id)
 
 
 # testing if member update function works
