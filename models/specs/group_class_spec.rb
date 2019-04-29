@@ -42,6 +42,16 @@ class TestGroupClass < MiniTest::Test
     assert_equal('26/04/2019', result)
   end
 
+  def test_date
+    result = Date.today.to_s
+    assert_equal('2019-04-29', result)
+  end
+
+  def test_date_in_future__next_day
+    result = @group_class.date_in_future(1)
+    assert_equal('2019-04-30', result)
+  end
+
 
 
 

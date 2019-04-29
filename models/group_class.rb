@@ -75,6 +75,10 @@ class GroupClass
     return Date.today.to_s
   end
 
+  def date_in_future(num)
+    return (Date.today + num).to_s
+  end
+
   def self.all()
     sql = "SELECT * FROM group_classes;"
     group_class_data = SqlRunner.run(sql)
