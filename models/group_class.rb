@@ -54,6 +54,14 @@ class GroupClass
     return spaces.to_i
   end
 
+  def class_is_full()
+    if remaining_spaces <= 0
+      return true
+    else
+      return false
+    end
+  end
+
   def self.all()
     sql = "SELECT * FROM group_classes;"
     group_class_data = SqlRunner.run(sql)
