@@ -1,3 +1,4 @@
+require('date')
 require_relative('../db/sql_runner.rb')
 require_relative('member.rb')
 require_relative('booking.rb')
@@ -68,6 +69,10 @@ class GroupClass
     else
       return false
     end
+  end
+
+  def date_today()
+    return Date.today.to_s
   end
 
   def self.all()

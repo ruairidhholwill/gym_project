@@ -48,7 +48,7 @@ class Booking
   end
 
   def date_today()
-    p Date.today
+    return Date.today.to_s
   end
 
   def self.all()

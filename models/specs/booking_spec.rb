@@ -29,6 +29,7 @@ class TestBooking < MiniTest::Test
     assert_equal(7, result)
   end
 
+# these may fail in future if expected dates not updated
   def test_date
     result = Date.today.to_s
     assert_equal('2019-04-29', result)
