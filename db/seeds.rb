@@ -19,7 +19,7 @@ end
 
 member1 = make_member('Ruairidh', 'Holwill', 'Standard')
 member2 = make_member('Chris', 'Mitchell', 'Standard')
-member1 = make_member('Connie', 'Begg', 'Premium')
+member3 = make_member('Connie', 'Begg', 'Premium')
 
 def make_group_class(class_name, capacity, start_at, end_at, class_date)
     new_group_class = GroupClass.new( {

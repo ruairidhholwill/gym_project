@@ -33,7 +33,7 @@ end
 get '/bookings/:id/edit' do
   @booking = Booking.find(params['id'])
   @members = Member.all
-  @group_classes = GroupClass.all
+  @group_classes = GroupClass.all_upcoming
   erb(:"bookings/edit")
 end
 

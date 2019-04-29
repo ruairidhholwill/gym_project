@@ -58,6 +58,14 @@ class Member
     return results.map { |group_class| GroupClass.new(group_class) }
   end
 
+  def is_member_premium()
+    if @membership_type == "Standard"
+      return false
+    else
+      return true
+    end
+  end
+
   def self.all()
     sql = "SELECT * FROM members;"
     member_data = SqlRunner.run(sql)

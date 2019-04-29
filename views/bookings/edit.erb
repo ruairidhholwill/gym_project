@@ -22,7 +22,7 @@
           <% if group_class.id == @booking.group_class.id %>
             <option value=<%= group_class.id %> selected><%= group_class.class_name %> - <%= group_class.class_date %></option>
           <% else %>
-            <option value=<%= group_class.id %>><%= group_class.class_name.capitalize %></option>
+            <option value=<%= group_class.id %>><%= group_class.class_name %></option>
           <% end %>
         <% end %>
       </select>
