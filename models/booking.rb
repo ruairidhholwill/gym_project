@@ -52,7 +52,14 @@ class Booking
     bookings = map_items(booking_data)
     return bookings
   end
-  
+
+  def self.all_upcoming()
+    sql = "SELECT bookings.* FROM bookings INNER JOIN group_classes ON bookings.group_class_id = group_classes.id WHERE class_date >= CURRENT_DATE;"
+    booking_data = SqlRunner.run(sql)
+    bookings = map_items(booking_data)
+    return bookings
+  end
+
   def self.find(id)
     sql = "SELECT * FROM bookings WHERE id = $1;"
     values = [id]
