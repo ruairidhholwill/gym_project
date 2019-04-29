@@ -20,9 +20,17 @@
       <select name="group_class_id"> selected="<%= @booking.group_class.id %>">
         <% @group_classes.each do |group_class| %>
           <% if group_class.id == @booking.group_class.id %>
-            <option value=<%= group_class.id %> selected><%= group_class.class_name %> - <%= group_class.class_date %></option>
+            <option value= <%= group_class.id %> selected><%= group_class.class_name %> - <%= group_class.class_date %></option>
+          <% elsif group_class.class_is_full == true %>
+            <option value="<%= group_class.id %>"disabled>
+              <%= group_class.class_date %> - <%= group_class.class_name %>: CLASS FULL
+            </option>
+          <% elsif (@booking.member.is_member_premium == false) && (group_class.off_peak_class == false) %>
+            <option value="<%= group_class.id %>"disabled>
+            <%= group_class.class_date %> - <%= group_class.class_name %>: UPGRADE
+            </option>
           <% else %>
-            <option value=<%= group_class.id %>><%= group_class.class_name %></option>
+            <option value=<%= group_class.id %>><%= group_class.class_name %> - <%= group_class.class_date %></option>
           <% end %>
         <% end %>
       </select>
