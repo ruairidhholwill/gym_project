@@ -81,6 +81,7 @@ class GroupClass
 
   def day_week_num(num)
     return (Date.today + num).cwday
+    # day_of_week(day_num)
   end
 
   def day_of_week(num)
