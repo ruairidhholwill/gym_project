@@ -49,17 +49,17 @@ class TestGroupClass < MiniTest::Test
   end
 
   def test_date_in_future__next_day()
-    result = @group_class.date_in_future(2)
+    result = @group_class.future_date_by_days_ahead(2)
     assert_equal('2019-05-02', result)
   end
 
   def test_day_of_week_by_num__tuesday_is_2()
-    result = @group_class.day_week_num(0)
+    result = @group_class.day_of_week_by_number(0)
     assert_equal(2, result)
   end
 
   def test_day_of_week_by_num__thursday_is_4()
-    result = @group_class.day_week_num(2)
+    result = @group_class.day_of_week_by_number(2)
     assert_equal(4, result)
   end
 

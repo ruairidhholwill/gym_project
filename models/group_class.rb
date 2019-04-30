@@ -79,12 +79,12 @@ class GroupClass
     return (Date.today + num).to_s
   end
 
-  def day_of_week_by_number(num)
+  def self.day_of_week_by_number(num)
     return (Date.today + num).cwday
     # day_of_week(day_num)
   end
 
-  def day_of_week(num)
+  def self.day_of_week(num)
     if day_of_week_by_number(num) == 1
       return "Monday"
     elsif day_of_week_by_number(num) == 2
