@@ -42,14 +42,35 @@ class TestGroupClass < MiniTest::Test
     assert_equal('26/04/2019', result)
   end
 
-  def test_date
+# results may change if expected date not changed
+  def test_date()
     result = Date.today.to_s
-    assert_equal('2019-04-29', result)
+    assert_equal('2019-04-30', result)
   end
 
-  def test_date_in_future__next_day
-    result = @group_class.date_in_future(1)
-    assert_equal('2019-04-30', result)
+  def test_date_in_future__next_day()
+    result = @group_class.date_in_future(2)
+    assert_equal('2019-05-02', result)
+  end
+
+  def test_day_of_week_by_num__tuesday_is_2()
+    result = @group_class.day_week_num(0)
+    assert_equal(2, result)
+  end
+
+  def test_day_of_week_by_num__thursday_is_4()
+    result = @group_class.day_week_num(2)
+    assert_equal(4, result)
+  end
+
+  def test_day_of_week__if_day_is_today
+    result = @group_class.day_of_week(0)
+    assert_equal("Tuesday", result)
+  end
+
+  def test_day_of_week__if_day_is_3_days_ahead
+    result = @group_class.day_of_week(3)
+    assert_equal("Friday", result)
   end
 
 

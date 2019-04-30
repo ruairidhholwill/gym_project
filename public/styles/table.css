@@ -27,6 +27,12 @@ td {
   text-align: center;
 }
 
+#main-header {
+  text-align: left;
+  background-color: #6D7993;
+  width: 100%;
+}
+
 #table-li {
   font-size: 14px;
   font-family: arial;

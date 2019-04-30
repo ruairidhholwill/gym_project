@@ -79,6 +79,28 @@ class GroupClass
     return (Date.today + num).to_s
   end
 
+  def day_week_num(num)
+    return (Date.today + num).cwday
+  end
+
+  def day_of_week(num)
+    if day_week_num(num) == 1
+      return "Monday"
+    elsif day_week_num(num) == 2
+      return "Tuesday"
+    elsif day_week_num(num) == 3
+      return "Wedensday"
+    elsif day_week_num(num) == 4
+      return "Thursday"
+    elsif day_week_num(num) == 5
+      return "Friday"
+    elsif day_week_num(num) == 6
+      return "Saturday"
+    elsif day_week_num(num) == 7
+      return "Sunday"
+    end
+  end
+
   def self.all()
     sql = "SELECT * FROM group_classes;"
     group_class_data = SqlRunner.run(sql)
