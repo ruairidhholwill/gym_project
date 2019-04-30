@@ -1,19 +1,5 @@
-header {
-  background-color: white;
-  padding: 15px;
-  width: 100%;
-  text-align: center;
-}
-
-header, img {
-  height:150px;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 body {
-  /* background: white url('/images/gym.jpeg'); */
+  background: white url('/images/gym.jpeg');
   background: #9099A2;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -52,10 +38,10 @@ nav, li, a {
   text-align: center;
   text-decoration: none;
 }
-/*
-li a:hover {
-   background-color: lightblue;
-} */
+
+#header-a {
+  background-color: white;
+}
 
 .active {
   background-color: lightblue;
@@ -65,9 +51,14 @@ li a:hover {
   border-radius: 5px;
   width: 225px;
   background-color: white;
-  /* margin: auto; */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
   transition: 0.3s;
+  margin-top: 150px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+
 }
 
 .card:hover {
@@ -76,11 +67,16 @@ li a:hover {
 
 .flex-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
 }
 
-.what {
+.main {
   display: flex;
   flex-direction: column;
+}
+
+.card img {
+  border-bottom: 1px solid grey;
+  border-radius: 5px;
 }
