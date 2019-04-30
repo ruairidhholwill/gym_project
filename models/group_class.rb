@@ -75,29 +75,29 @@ class GroupClass
     return Date.today.to_s
   end
 
-  def date_in_future(num)
+  def future_date_by_days_ahead(num)
     return (Date.today + num).to_s
   end
 
-  def day_week_num(num)
+  def day_of_week_by_number(num)
     return (Date.today + num).cwday
     # day_of_week(day_num)
   end
 
   def day_of_week(num)
-    if day_week_num(num) == 1
+    if day_of_week_by_number(num) == 1
       return "Monday"
-    elsif day_week_num(num) == 2
+    elsif day_of_week_by_number(num) == 2
       return "Tuesday"
-    elsif day_week_num(num) == 3
+    elsif day_of_week_by_number(num) == 3
       return "Wedensday"
-    elsif day_week_num(num) == 4
+    elsif day_of_week_by_number(num) == 4
       return "Thursday"
-    elsif day_week_num(num) == 5
+    elsif day_of_week_by_number(num) == 5
       return "Friday"
-    elsif day_week_num(num) == 6
+    elsif day_of_week_by_number(num) == 6
       return "Saturday"
-    elsif day_week_num(num) == 7
+    elsif day_of_week_by_number(num) == 7
       return "Sunday"
     end
   end

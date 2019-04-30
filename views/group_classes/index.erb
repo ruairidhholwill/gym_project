@@ -39,7 +39,7 @@
     <th>End Time</th>
   </tr>
   <% for group_class in @group_classes %>
-  <% if group_class.date_in_future(1) == group_class.class_date %>
+  <% if group_class.future_date_by_days_ahead(1) == group_class.class_date %>
   <tr>
     <td><a href="/group_classes/<%= group_class.id %>"><%= group_class.id %></a></td>
     <td><%= group_class.class_name %></td>
@@ -65,7 +65,7 @@
     <th>End Time</th>
   </tr>
   <% for group_class in @group_classes %>
-  <% if group_class.date_in_future(2) == group_class.class_date %>
+  <% if group_class.future_date_by_days_ahead(2) == group_class.class_date %>
   <tr>
     <td><a href="/group_classes/<%= group_class.id %>"><%= group_class.id %></a></td>
     <td><%= group_class.class_name %></td>
@@ -91,7 +91,7 @@
     <th>End Time</th>
   </tr>
   <% for group_class in @group_classes %>
-  <% if group_class.date_in_future(3) == group_class.class_date %>
+  <% if group_class.future_date_by_days_ahead(3) == group_class.class_date %>
   <tr>
     <td><a href="/group_classes/<%= group_class.id %>"><%= group_class.id %></a></td>
     <td><%= group_class.class_name %></td>
@@ -117,7 +117,7 @@
     <th>End Time</th>
   </tr>
   <% for group_class in @group_classes %>
-  <% if group_class.date_in_future(4) == group_class.class_date %>
+  <% if group_class.future_date_by_days_ahead(4) == group_class.class_date %>
   <tr>
     <td><a href="/group_classes/<%= group_class.id %>"><%= group_class.id %></a></td>
     <td><%= group_class.class_name %></td>
@@ -143,7 +143,7 @@
     <th>End Time</th>
   </tr>
   <% for group_class in @group_classes %>
-  <% if group_class.date_in_future(5) == group_class.class_date %>
+  <% if group_class.future_date_by_days_ahead(5) == group_class.class_date %>
   <tr>
     <td><a href="/group_classes/<%= group_class.id %>"><%= group_class.id %></a></td>
     <td><%= group_class.class_name %></td>
