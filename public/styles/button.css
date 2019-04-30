@@ -20,8 +20,14 @@
   background-color: grey;
 }
 
-.btn--wrapper {
-  margin: 0px 0px 30px 0px;
+.btn--delete {
+  text-align: center;
+  background-color: #b23a3a;
+}
+
+.btn--edit {
+  text-align: center;
+  background-color: #7795c4;
 }
 
 .flex {
@@ -29,3 +35,7 @@
   flex-direction: row;
   justify-content: space-around;
 }
+/*
+#delete-submit {
+  background-color: darkred;
+} */

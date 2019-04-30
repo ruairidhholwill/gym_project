@@ -58,7 +58,6 @@ nav, li, a {
   margin-right: 100px;
   padding-left: 20px;
   padding-right: 20px;
-
 }
 
 .card:hover {
@@ -79,4 +78,18 @@ nav, li, a {
 .card img {
   border-bottom: 1px solid grey;
   border-radius: 5px;
+}
+
+#member-card {
+    border-radius: 5px;
+    width: 225px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    transition: 0.3s;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
 }

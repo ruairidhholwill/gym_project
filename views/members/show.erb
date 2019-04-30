@@ -1,11 +1,17 @@
-<h2><%= @member.full_name %></h2>
+<div id="member-card">
+  <img src="../images/member-icon.jpg" alt="Member icon" style="width:100%">
+  <div class="container">
+    <h2><%= @member.full_name %></h2>
+    <h3><%=  @member.membership_type%></h3>
+  </div>
+</div>
 
-<h3>Membership: <%=  @member.membership_type%></h3>
+<br></br>
 
-<button class="btn btn--action" onclick="window.location.href='/members/<%= @member.id %>/edit'">Edit</button>
+<button class="btn btn--edit" onclick="window.location.href='/members/<%= @member.id %>/edit'">Edit</button>
 
 <div id="submit">
-<form action="/members/<%= @member.id %>/delete" method="POST"><input class="btn btn--action" type="submit" value="Delete"></form>
+    <form action="/members/<%= @member.id %>/delete" method="POST"><input class="btn btn--delete" type="submit" value="Delete"></form>
 </div>
 
 <br></br>
@@ -21,4 +27,8 @@
   </td>
 </table>
 
+<br></br>
+
 <button class="btn btn--action" onclick="window.location.href='/members/<%= @member.id %>/class_history'">Previous History</button>
+
+<br></br>

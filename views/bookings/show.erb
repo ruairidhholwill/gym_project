@@ -1,14 +1,21 @@
-<h1>Booking Details:</h1>
+<div id="member-card">
+  <img src="../images/booking-icon.png" alt="Member icon" style="width:100%">
+  <div class="container">
+    <h2>Booking Details:</h2>
+    <h3>Member: <%= @booking.member.full_name %></h3>
+    <h3>Class: <%= @booking.group_class.class_name %></h3>
+    <h3>Date: <%= @booking.group_class.class_date %></h3>
+  </div>
+</div>
 
-<h3>Member: <%= @booking.member.full_name %></h3>
-<h3>Class: <%= @booking.group_class.class_name %></h3>
-<h3>Date: <%= @booking.group_class.class_date %></h3>
+<br></br>
 
-
-<button class="btn btn--action" onclick="window.location.href='/bookings/<%= @booking.id %>/edit'">Edit</button>
+<button class="btn btn--edit" onclick="window.location.href='/bookings/<%= @booking.id %>/edit'">Edit</button>
 
 <div id="submit">
   <form action="/bookings/<%= @booking.id %>/delete" method="post">
-    <input class="btn btn--action" type="submit" value="Delete">
+    <input class="btn btn--delete" type="submit" value="Delete">
   </form>
 </div>
+
+<br></br>
