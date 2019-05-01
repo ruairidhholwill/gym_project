@@ -35,5 +35,4 @@ class TestMember < MiniTest::Test
     assert_equal('Standard', result)
   end
 
-
 end

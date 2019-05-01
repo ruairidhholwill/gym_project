@@ -40,6 +40,4 @@ class TestBooking < MiniTest::Test
     assert_equal('2019-04-30', result)
   end
 
-
-
 end

@@ -73,6 +73,7 @@ class TestGroupClass < MiniTest::Test
     assert_equal("Friday", result)
   end
 
+end
 
 
 

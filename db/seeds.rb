@@ -48,11 +48,5 @@ end
 booking1 = make_booking(member1.id, group_class1.id)
 booking2 = make_booking(member2.id, group_class1.id)
 
-
-# testing if member update function works
-# member1.membership_type = 'Pro'
-# member1.update()
-#
-
-binding.pry
-nil
+# binding.pry
+# nil

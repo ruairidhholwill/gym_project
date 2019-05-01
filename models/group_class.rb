@@ -81,7 +81,6 @@ class GroupClass
 
   def self.day_of_week_by_number(num)
     return (Date.today + num).cwday
-    # day_of_week(day_num)
   end
 
   def self.day_of_week(num)
