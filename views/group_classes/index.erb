@@ -16,7 +16,7 @@
   <% if group_class.date_today == group_class.class_date %>
   <tr>
     <td><a href="/group_classes/<%= group_class.id %>"><%= group_class.id %></a></td>
-    <td><%= group_class.class_name %></td>
+    <td><a href="/group_classes/<%= group_class.id %>"><%= group_class.class_name %></a></td>
     <td><%= group_class.capacity%></td>
     <td><%= group_class.start_at %></td>
     <td><%= group_class.end_at %></td>
