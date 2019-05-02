@@ -89,7 +89,7 @@ class GroupClass
     elsif day_of_week_by_number(num) == 2
       return "Tuesday"
     elsif day_of_week_by_number(num) == 3
-      return "Wedensday"
+      return "Wednesday"
     elsif day_of_week_by_number(num) == 4
       return "Thursday"
     elsif day_of_week_by_number(num) == 5
