@@ -63,6 +63,16 @@ class GroupClass
     end
   end
 
+  # This function will determine whether a particular class is off peak or not.
+  #
+  # function off_peak_class()
+  #   claculate whether the class times are between certain times of the day
+  #     if they are, return true
+  #   if the class times are outside of these hours
+  #     return false
+  #   end
+  # end
+
   def off_peak_class()
     if @start_at.between?("11:00", "15:00")
       return true
