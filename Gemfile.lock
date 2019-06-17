@@ -26,7 +26,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  pg (~> 0.18)
+  pg
   sinatra
   sinatra-contrib
 
